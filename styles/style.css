@@ -1,26 +1,85 @@
-body {
-    /* background: yellow; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+:root {
+    --col-primary: hsl(243, 75%, 59%);
+    --col-gray: hsl(217, 19%, 27%);
 }
 
-header, footer, section, nav{
-    border: 1px solid red;
+body {
+    /* background: yellow; */
+    font-family: 'Nunito', sans-serif;
+    color: var(--col-gray);
 }
+
+a {
+    color: var(--col-gray);
+}
+/* header, footer, section, nav{
+    border: 1px solid red;
+} */
 
 img {
     max-width: 100%;
 }
+
+.col-primary {
+    color: var(--col-primary);
+}
+
+
+
+.container {
+    max-width:1200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid red; */
+}
+
+
 
 .header-main {
     /* min-height: 64px;
     max-height: 180px;
     height: 20vh; */
     display: flex;
-    background-color: bisque;
+    justify-content: space-between;
+    
     height: clamp(64px, 20vh, 180px);
-    padding: 4vh 0;
+    /* padding: 4vh 0; */
+    /* background-color: bisque; */
+}
+
+.header-main>nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-main>nav>a{
+    text-decoration: none;
 }
 
 .logo-main {
     height: 100%;
     width: auto;
 }
+
+
+
+.hero {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr) ;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.hero-text h1 {
+    font-weight: 600;
+}
+
+
